@@ -15,13 +15,10 @@
 	max-width: 100%;
 	width: auto;
 }
-.myNav {
-	color: #fff;
-	background-color: #6699cc;
-	width: 100%;
-	height: 56px;
-	line-height: 56px;
-  }
+.navbar
+{
+   background-color: transparent;
+}
 .overlay {
 	position: absolute;
 	top: 0;
