@@ -1,0 +1,85 @@
+<html>
+
+    <link rel="icon" type="image/png" href="icon.png"> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA=Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>hadi.works</title> 
+    </head> 
+    
+    <body> 
+      <aside>
+        <figure> 
+          <div id="avatar"></div>
+          <figcaption>I|̶I | hadi.works</figcaption>
+          </figure>
+          <img src="res/menu.svg" id="menu"> 
+          <nav>
+              <ul>
+                  <img src="res/menu.svg" id="closemenu" transform="rotate(90)"> 
+                  <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  <li ><a href="https://www.instagram.com/hadi.works">instagram</a></li>
+
+                                 <!--
+                  <li class="tab"><a href="about.html">about</a></li>
+                  <li class="tab"><a href="blog/posts.html">blog</a></li>
+                  <li class="tab"><a href="services.html">services</a></li>
+                  --> 
+              </ul>            
+        </nav>
+        </aside>
+
+    <main>
+     
+
+  <form method="post" action="mailto:ask@hadi.works" >
+      name:<br>
+      <input type="text" name="name"><br>
+      email:<br>
+      <input type="text" name="mail"><br>
+      inquiry:<br>
+      <textarea rows = "5" cols = "50" name="inequiry"> </textarea><br><br>
+      <input type="submit" id ="sendemail" value="Send Email" enctype="text/plain"/> 
+
+      </form>
+
+      <p id="thanks"> thanks! i'll try to get back to you within a few days</p>
+    </main>
+
+    
+    <script> 
+        (function() { 
+         var menu = document.querySelector('ul'), 
+             menulink = document.getElementById('menu'); 
+         menulink.addEventListener('click', function(e) { 
+           menu.classList.toggle('active'); 
+           e.preventDefault(); 
+         });
+        })(); 
+        (function() { 
+         var menu = document.querySelector('ul'), 
+             closemenulink = document.getElementById('closemenu'); 
+         closemenulink.addEventListener('click', function(e) { 
+           menu.classList.toggle('active'); 
+         });
+        })(); 
+        (function() { 
+         var form = document.querySelector('form'), 
+             formbutton = document.getElementById('sendemail'), 
+             thanks = document.getElementById('thanks'); 
+         formbutton.addEventListener('click', function(e) { 
+           form.classList.toggle('noform'); 
+           thanks.style.display = "block"; 
+           e.preventDefault(); 
+         });
+        })(); 
+
+
+      </script>
+
+
+    </body>
+</html>

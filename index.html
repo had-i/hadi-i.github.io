@@ -1,7 +1,6 @@
 <!DOCTYPE html> 
-<html> 
-
-<!--
+<html lang="en"> 
+  <!--
           __         ___   
         /'   `\,--,/'   `\  
       ,(--HADI-)--(-WORKS-).
@@ -9,68 +8,61 @@
           """        """
 -->
 
-<head> 
-    <link rel="icon" 
-    type="image/png" 
-    href="icon.png">
-<!--Import materialize first to prevent floating link-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<nav>
-    <div class="nav-content">
-        <ul class="navbar">
-            <li class="tab"><a href="about.html">about</a></li>
-            <li class="tab"><a href="blog/posts.html">blog</a></li>
-            <li class="tab"><a href="contact.html">contact</a></li>
-            <li class="tab"><a href="pages.html">pages</a></li>
-            <li class="tab"><a href="services.html">services</a></li>
-            <li class="tab"><a href="index.html">home</a></li>
-        </ul>
-    </div>
-    
-  </nav>
+  <head> 
+      <link rel="icon" type="image/png" href="icon.png"> 
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <meta http-equiv="X-UA=Compatible" content="ie=edge"> 
+      <link rel="stylesheet" href="css/styles.css">
+      <title>hadi.works</title> 
+      </head> 
+      
+      <body> 
+        <aside>
+          <figure> 
+            <div id="avatar"></div>
+            <figcaption>I|̶I | hadi.works</figcaption>
+            </figure>
+            <img src="res/menu.svg" id="menu"> 
+            <nav>
+                <ul>
+                    <img src="res/menu.svg" id="closemenu" transform="rotate(90)"> 
+                    <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+                    <li><a href="index.html">home</a></li>
+                    <li class="tab"><a href="contact.html">contact</a></li>
+                    <li ><a href="https://www.instagram.com/hadi.works">instagram</a></li>
 
-  
-<title>hadi.works</title>
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                                   <!--
+                    <li class="tab"><a href="about.html">about</a></li>
+                    <li class="tab"><a href="blog/posts.html">blog</a></li>
+                    <li class="tab"><a href="services.html">services</a></li>
+                    --> 
+                </ul>            
+          </nav>
+          </aside>
 
-<link href="/css/styles.css" rel="stylesheet">
+      <main>
+        <h1>i make things but have no clue what I'm doing</h1>
+      </main>
 
-</head> 
-
-<body> 
-
-
-<!--
-<div class="container">
-    <img class="image" src="/res/Side.jpg" alt="*">
-    <div class="centered">mmm walnut</div>
-  </div>
-</div>
--->
-
-<div class="container">
-<div class="row">
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-          <img src="/res/Angle.jpg">
-          <span class="card-title">ROBIE | HAD66</span>
-        </div>
-        <div class="card-content">
-          <p>A keyboard made of acrylic and acetal resin (POM). Inspired by TGR's Alice, Keycult's gasket mounting solutions, and Frank Lloyd Wright's Robie House.</p> 
-          <i>Designed March - May 2019. Assembled June 2019.</i>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+      <script> 
+        (function() { 
+         var menu = document.querySelector('ul'), 
+             menulink = document.getElementById('menu'); 
+         menulink.addEventListener('click', function(e) { 
+           menu.classList.toggle('active'); 
+           e.preventDefault(); 
+         });
+        })(); 
+        (function() { 
+         var menu = document.querySelector('ul'), 
+             closemenulink = document.getElementById('closemenu'); 
+         closemenulink.addEventListener('click', function(e) { 
+           menu.classList.toggle('active'); 
+         });
+        })(); 
 
 
-</body> 
+      </script>
+      </body> 
 </html>

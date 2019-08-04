@@ -1,45 +1,146 @@
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.container {
-	position: relative;
-	width: 100%;
-	}
-.container:hover .overlay {
-	opacity: 1;
-	}
-.image { /* basic responsive img */
-	max-width: 100%;
-	width: auto;
-}
-.navbar
-{
-   background-color: transparent;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #008CBA;
-  }
-.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body, html{ 
+	height: calc(100% - 2em); 
+	margin: 0; 
+	font-family: 'Roboto'; 
 }
 
+body{ 
+	background-color: white; 
+}
+
+#closemenu{ 
+	position: right; 
+}
+aside{ 
+	color: black; 
+	display: grid; 
+	grid-template-columns: auto 40px; 
+	padding: 2em; 
+}
+img { 
+	width: 40px; 
+	cursor: pointer; 
+}
+
+figure { 
+	margin: 0; 
+	padding: .25em;
+	font-size:1.5em;
+}
+
+figcaption { 
+	font-size: 1.3em; 
+	font-weight: thin; 
+}
+
+nav { 
+	background: white; 
+}
+
+.active { 
+	position: absolute; 
+	display: block; 
+	background: white; 
+	width:50%; 
+	right: 0; 
+	top: 0; 
+	height:100%;
+}
+
+ul { 
+	display: none;
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+}
+
+ul li a { 
+	text-decoration: none; 
+	text-transform: lowercase; 
+	font-size: .8em; 
+	display: block;
+	padding: 1em 1em;
+	background-color: rgba(255,255,255,.35); 
+	color: black;
+
+}
+
+
+main { 
+	background: white; 
+	padding: 1em 1.4em; 
+}
+
+h1 { 
+	margin: 0; 
+} 
+
+p { 
+	font-size: 1.1em; 
+	line-height: 1.3em; 
+}
+
+.cta { 
+	display: block; 
+	color: white; 
+	background: black; 
+	text-decoration: none; 
+	padding: 8px 50px; 
+	font-size: 1.2em; 
+	text-align: center; 
+	font-weight: bold; 
+	border-radius: 4px; 
+	margin: 2em 0;
+}
+
+.noform { 
+	display: none;
+}
+
+#thanks { 
+	display: none; 
+}
+
+@media only screen and (min-width: 801px) { 
+	body { 
+		display: grid; 
+		grid-template-rows: 10% auto; 
+		padding: 2em;
+	}
+	#menu { 
+		display: none; 
+	}
+	#closemenu { 
+		display: none; 
+	}
+
+	aside { 
+		grid-template-columns: auto auto; 
+		grid-template-rows: 10% auto; 
+		padding: 0;
+	}
+
+	main { 
+		padding: 4em;
+	}
+	li {
+		float: left; 
+	}
+
+	li a { 
+		display: block; 
+		color: white; 
+	}
+	li a:hover { 
+		background-color: rgb(206, 206, 206, 25%); 
+	}
+
+	ul { 
+		float: right;
+		display: block; 
+		background: none !important; 
+		text-align: right; 
+	}
+}
